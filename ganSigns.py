@@ -3,7 +3,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
 from torch.utils.data import Dataset
-from torchvision import transforms, utils
 
 
 class Generator(nn.Module):
@@ -13,6 +12,7 @@ class Generator(nn.Module):
 
         self.label_emb_gen = nn.Embedding(parameters['n_classes'], parameters['n_classes'])
         self.img_shape = [parameters['img_size'], parameters['img_size']]
+        self.G_loss = [1]
 
         def block(in_feat, out_feat, normalize=True):
             layers = [nn.Linear(in_feat, out_feat)]
@@ -45,6 +45,8 @@ class Discriminator(nn.Module):
 
         self.label_emb_dis = nn.Embedding(parameters['n_classes'], parameters['n_classes'])
         self.img_shape = [parameters['img_size'], parameters['img_size']]
+        self.D_loss = [1]
+
         self.model = nn.Sequential(
             nn.Linear(parameters['n_classes'] + int(np.prod(self.img_shape)), 512),
             nn.LeakyReLU(0.2, inplace=True),
