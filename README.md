@@ -19,6 +19,7 @@ Solver.py - class to train the two-layer feedforward network <br />
 Trained (contains .pth files with trained models) <br />
 discriminator_conv_short.pth - descriminator for convolutional cGAN pretrained on 6 classes. <br />
 generator_conv_short.pth - generator for convolutional cGAN pretrained on 6 classes. <br />
+twoLayer.pth - feedforward network for hand position classification (trained for variace 15). <br />
 
 
 
