@@ -3,7 +3,9 @@ Neuro-Inspired System Engineering - final project. <br />
 Tetiana Klymenko and Cristina Gil <br />
 
 ipynb notebooks (for training the models): <br />
-NISE_project - performance of final model <br />
+
+Full Model - performance of final model <br />
+Train FeedForwardNet - training feedforward Network <br /> 
 train_Linear_cGAN - training linear model of cGAN <br />
 NISE GanConv - training convolutional model for cGAN and evaluating KL divergence <br />
 
