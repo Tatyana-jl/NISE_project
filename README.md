@@ -16,6 +16,8 @@ ganConv.py - model for convolutional cGAN <br />
 TwoLayerNet.py - model for feedforward network <br />
 Solver.py - class to train the two-layer feedforward network <br />
 
+Hand_model.py - class to generate a model of the hand <br />
+
 Trained (contains .pth files with trained models) <br />
 discriminator_conv_short.pth - descriminator for convolutional cGAN pretrained on 6 classes. <br />
 generator_conv_short.pth - generator for convolutional cGAN pretrained on 6 classes. <br />
